@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<style type="text/css">
+		:root {
+	--celeste: #3176e3;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 0px;
+	 z-index: 1000;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--celeste);
+	font-size: 40px;
+	width: 55%;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	text-align: left;
+	z-index: 1000;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+ul, ol {
+				list-style:none;
+	 			z-index: 1000;
+}
+			
+			.nav {
+				width:100%; /*Le establecemos un ancho*/
+				margin: auto; /*Centramos automaticamente*/
+			}
+
+			.nav > li {
+				float:left;		
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:inline-block;
+				min-width: 100%;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+		display: inline-block;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+}
+
+iframe{
+    width: 100%;
+    height: 92%;
+    position: absolute;
+    left: 0px;
+    z-index: 0;
+   
+}
+
+	</style>
+	<title>SGA INED</title>
+</head>
+<body>
+
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">INED Linda Vista 2030</h2>
+			
+			<nav class="nav">
+        <ul class="nav">
+
+            
+<!------------------------------------------------------------Inicio------------------------------------------------>
+
+
+            <li class="list__item">
+                <div class="list__button">
+           
+                    <a href="https://inedlv.github.io/INICIO/" target="iframe1" class="nav__link"><img src="assets/dashboard.svg" class="list__img"> Inicio</a>
+                </div>
+            </li>
+<!------------------------------------------------------------Ingreso------------------------------------------------>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="#" class="nav__link">
+                    	<img src="assets/docs.svg" class="list__img"> Ingreso de Calificaciones<img src="assets/arrow.svg" class="list__arrow"></a>
+                    
+                </div>
+
+		<!---------------------------------------Unidades--------------------------------->
+            <ul class="list__show">
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="https://inedlv.github.io/U130/" target="iframe1" class="nav__link">
+                    	<img src="assets/docs.svg" class="list__img"> Primera Unidad</a>
+                </div>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="https://inedlv.github.io/U230/" target="iframe1" class="nav__link">
+                    	<img src="assets/docs.svg" class="list__img"> Segunda Unidad</a>
+                </div>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="https://inedlv.github.io/U330/" target="iframe1" class="nav__link">
+                    	<img src="assets/docs.svg" class="list__img"> Tercera Unidad</a>
+                </div>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="https://inedlv.github.io/U430/" target="iframe1" class="nav__link"> 
+                    	<img src="assets/docs.svg" class="list__img"> Cuarta Unidad</a>
+                </div>
+            </li>
+        </ul>
+
+
+<!------------------------------------------------------------Asistencia------------------------------------------------>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="#" class="nav__link">
+                    	<img src="assets/docs.svg" class="list__img"> Asistencia<img src="assets/arrow.svg" class="list__arrow"></a>
+                    
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="https://docs.google.com/spreadsheets/d/1115gX0iUhiF_du9d10dtw-wihGX1ke9A/edit?usp=sharing&ouid=107675181903382957083&rtpof=true&sd=true" target="iframe1" class="nav__link nav__link--inside">Primera Unidad</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://docs.google.com/spreadsheets/d/1ARlDpyqaWEIrzcmIQSrKkqtnrflSyjv7/edit?usp=sharing&ouid=107675181903382957083&rtpof=true&sd=true" target="iframe1" class="nav__link nav__link--inside">Segunda Unidad</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://docs.google.com/spreadsheets/d/19RVBEz6g9ivGtm24KzP0Xn6bir5IXW-f/edit?usp=sharing&ouid=107675181903382957083&rtpof=true&sd=true" target="iframe1" class="nav__link nav__link--inside">Tercera Unidad</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://docs.google.com/spreadsheets/d/11oa6jaLrxubHpXg2Nl6xghl986DqSqG4/edit?usp=sharing&ouid=107675181903382957083&rtpof=true&sd=true" target="iframe1" class="nav__link nav__link--inside">Cuarta Unidad</a>
+                    </li>
+
+                </ul>
+
+            </li>
+            
+<!------------------------------------------------------------Informes------------------------------------------------>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="#" class="nav__link"><img src="assets/bell.svg" class="list__img"> Informes Académicos<img src="assets/arrow.svg" class="list__arrow"></a>
+                    
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="https://docs.google.com/spreadsheets/d/1jPNMm4eX1phxzr0BrS0IHKmyiwpKIewPWLq5HKRQWc8/edit?usp=sharing" target="iframe1" class="nav__link nav__link--inside">Unidad 1</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://docs.google.com/spreadsheets/d/1RiWtuwaF2_eWi3sIa8qUgrLnOaxIpjTArLkIfkF3lHg/edit?usp=sharing" target="iframe1" class="nav__link nav__link--inside">Unidad 2</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://docs.google.com/spreadsheets/d/1SZJe_Kut9yhLsplWw2BFIYxsQXc1eDv-zZ6taMTDwo8/edit?usp=sharing" target="iframe1" class="nav__link nav__link--inside">Unidad 3</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://docs.google.com/spreadsheets/d/1NzkbVagpuvmytrD2buAYxu9KIRiQTNlxJhnj-0a3PNY/edit?usp=sharing" target="iframe1" class="nav__link nav__link--inside">Unidad 4</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://docs.google.com/spreadsheets/d/1RJSwOSKHjlsYCN11O4vhExNuVe_KRnroQirxIqhPXTU/edit?usp=sharing" target="iframe1" class="nav__link nav__link--inside">4to Grado Promedio Final</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://docs.google.com/spreadsheets/d/1XQUgqPqrtGq2Eu6kBGQwzsZeiNNYK9GqrOjECeOdtj0/edit?usp=sharing" target="iframe1" class="nav__link nav__link--inside">5to Grado Promedio Final</a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+<!------------------------------------------------------------Contacto------------------------------------------------>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    
+                    <a href="#" class="nav__link"><img src="assets/message.svg" class="list__img"> Contacto</a>
+                </div>
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#">Tel. 66305770</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#">inedlv@gmail.com</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://es-la.facebook.com/inedlv/" target="_blank" >Facebook</a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+        </ul>
+    </nav>
+		</div>
+	</header>
+	<main>
+		<div>
+			<iframe name="iframe1" src="https://inedlv.github.io/INICIO/"> </iframe>
+		</div>
+		
+	</main>
+	
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
